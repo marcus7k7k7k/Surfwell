@@ -1,0 +1,614 @@
+@charset "utf-8";
+/*
+ * Surfwell
+ * Copyright 2024
+ * Author: Marcus Chen
+ * Licensed
+*/
+
+/* -------------------------- *\
+	Content
+\* -------------------------- */
+
+/**
+ * Content ............ You are reading it!
+ * Global ............ Set common styles
+ * Layout ............ Set grid styles
+ * Component ............ Set component styles
+ * Utility ............ Set some tools style
+*/
+
+/**
+	Devices px setting
+	lg (large)  for desktop  .......... > 968px 
+	md (medium) for tablets  .......... 600px to 968px 
+	sm (small)  for smartphones .......... < 600px
+*/
+
+/* -------------------------- *\
+	Global
+\* -------------------------- */
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-family: '微軟正黑體','Times New Roman', Times, serif ,arial;
+	overflow-x: hidden;
+	min-width: 360px;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+} 
+
+/* -------------------------- *\
+	Layout
+\* -------------------------- */
+.wrapper{
+	width: 100%;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.row{
+	/* Adjust space for start and end */
+	margin-left: -16px;
+	margin-right: -16px;
+}
+.row:after{
+	/* Clear Float */
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* col-60-units (2.3.4.5.6) */
+.col-lg-60,.col-lg-45,.col-lg-36,.col-lg-30,.col-lg-24,.col-lg-20,.col-lg-15,.col-lg-12,
+.col-md-60,.col-md-45,.col-md-36,.col-md-30,.col-md-24,.col-md-20,.col-md-15,.col-md-12,
+.col-sm-60,.col-sm-45,.col-sm-36,.col-sm-30,.col-sm-24,.col-sm-20,.col-sm-15,.col-sm-12{
+	float: left;
+	padding: 0 16px;
+	/* border: 1px solid teal; */
+	/* padding-left: 4px; */
+	/* padding-right: 4px; */
+}
+.col-lg-60{
+	width: 100%;
+}
+.col-lg-45{
+	width: 75%;
+}
+.col-lg-36{
+	width: 60%;
+}
+.col-lg-30{
+	width: 50%;
+}
+.col-lg-24{
+	width: 40%;
+}
+.col-lg-20{
+	width: 33.333333%;
+}
+.col-lg-15{
+	width: 25%;
+}
+.col-lg-12{
+	width: 20%;
+}
+
+@media screen and (max-width: 968px) {
+	.col-md-60{
+		width: 100%;
+	}
+	.col-md-45{
+		width: 75%;
+	}
+	.col-md-36{
+		width: 60%;
+	}
+	.col-md-30{
+		width: 50%;
+	}
+	.col-md-24{
+		width: 40%;
+	}
+	.col-md-20{
+		width: 33.333333%;
+	}
+	.col-md-15{
+		width: 25%;
+	}
+	.col-md-12{
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-sm-60{
+		width: 100%;
+	}
+	.col-sm-45{
+		width: 75%;
+	}
+	.col-sm-36{
+		width: 60%;
+	}
+	.col-sm-30{
+		width: 50%;
+	}
+	.col-sm-24{
+		width: 40%;
+	}
+	.col-sm-20{
+		width: 33.333333%;
+	}
+	.col-sm-15{
+		width: 25%;
+	}
+	.col-sm-12{
+		width: 20%;
+	}
+}
+
+
+/* -------------------------- *\
+	Component
+\* -------------------------- */
+
+/* btn */
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 48px;
+	font-size: 18px;
+	line-height: 48px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	background-image: url('../images/common/button-brush.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn:hover{
+	transform: scale(1.05);
+}
+.btn.btn-black-text{
+	color: #000;
+}
+
+/* image container */
+.image-container{
+	width: 100%;
+	/*border: 1px solid #000;*/
+}
+.image-container:before{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-top: 75%;
+}
+.image-container .image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.image-container.image-coach:before{
+	width: 100%;
+	padding-top: 60%;
+}
+
+.image-container.image-service-item:before{
+	width: 100%;
+	padding-top: 100%;
+}
+
+/* navbar */
+.navbar{
+	height: 64px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.navbar .brand{
+	display: inline-block;
+	vertical-align: top;
+	width: 160px;
+	height: 64px;
+	/* MARCUS */
+	background-image: url('../images/common/logo-surfwell-removebg.png');
+	background-size: contain;
+	transform: scale(1.5);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	/* color: #fff; */
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+}
+.navbar .nav{
+	float: right;
+}
+.navbar .nav .nav-item{
+	float: left;
+}
+.navbar .nav .nav-link{
+	display: block;
+	color: #fff;
+	line-height: 24px;
+	padding: 20px 16px;
+	/* border: 1px solid #fff;  */
+	transition: color 0.3s;
+}
+.navbar .nav .nav-link:hover{
+	color: #46B9B9;
+}
+
+/* jumbotron */
+.jumbotron{
+	padding-top: 200px;
+	padding-bottom: 160px;
+	height: 760px;
+	background-image: url('../images/bg/surfwell-bg-home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.jumbotron-intro-bg{
+	position: absolute;
+	top: 0;
+	left: 65%;
+	width: 40%;
+	height: 100%;
+	/* border: 1px solid red; */
+	
+	background-image: url('../images/bg/surfwell-bg-home-brush.png');
+	transform: scaleX(1.6);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.jumbotron-intro{
+	position: absolute;
+	top: 20%;
+	left: 60%;
+	max-width: 30%;
+	padding: 40px 16px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+	/* border: 1px solid yellow; */
+}
+
+.jumbotron-intro .title{
+	font-size: 48px;
+	margin-bottom: 16px;
+}
+
+.jumbotron-intro .para{
+	font-size: 20px;
+	line-height: 32px;
+	padding-left: 8px;
+}
+
+
+@media screen and (max-width: 968px) {
+	.jumbotron{
+		padding-top: 120px;
+		padding-bottom: 80px;
+		height: 600px;
+	}
+	
+	.jumbotron-intro-bg{
+		left: 60%;
+		width: 35%;
+	}
+	
+	.jumbotron-intro{
+		top: 22%;
+		left: 58%;
+		max-width: 40%;
+		padding: 40px 12px;
+	}
+	
+	.jumbotron-intro .title{
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	
+	.jumbotron-intro .para{
+		font-size: 16px;
+		line-height: 24px;
+		padding-left: 6px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.jumbotron{
+		padding-top: 80px;
+		padding-bottom: 40px;
+		height: 460px;
+	}
+	
+	.jumbotron-intro-bg{
+		left: 55%;
+		width: 40%;
+	}
+	
+	.jumbotron-intro{
+		top: 24%;
+		left: 56%;
+		max-width: 45%;
+		padding: 40px 8px;
+	}
+	
+	.jumbotron-intro .title{
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	
+	.jumbotron-intro .para{
+		font-size: 16px;
+		line-height: 24px;
+		padding-left: 4px;
+	}
+}
+
+/* hero */
+.hero{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #efefef;
+	/*  #efefef = rgb(240, 240, 240) */
+	/* border: 1px solid yellow; */
+}
+
+/* section-intro */
+.section-intro{
+	color: #333;
+	text-align: left;
+	margin: 24px 16px;
+}
+
+.section-intro .title{
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.section-intro .para{
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 16px;
+}
+
+@media screen and (max-width: 968px) {
+	.hero{
+		padding-top: 32px;
+		padding-bottom: 20px;
+	}
+	.hero .row.row-counter-clockwise{
+		margin: 0;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.hero .row.row-clockwise{
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.section-intro{
+		margin: 20px 12px 8px;
+	}
+}
+
+
+/* section-intro customize */
+.section-intro.section-margin-clear{
+	margin-top: 0;
+}
+
+.section-intro .title.text-bg{
+	margin-bottom: 8px;
+	width: 260px;
+	height: 48px;
+	font-size: 20px;
+	line-height: 48px;
+	font-weight: bold;
+
+	background-image: url('../images/common/text-brush.png');
+	background-size: contain; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section-intro.section-text-white{
+	color: #fff;
+}
+
+
+/* contact us  */
+.hero.hero-bg-image-contact{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 640px;
+	background-image: url('../images/bg/surfwell-bg-contact.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact-text-border{
+	position: absolute;
+	width: 364px;
+	height: 344px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-width: 4px;
+	border-style: solid;
+	border-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(0, 0, 0, 0.6) 100%); 
+	border-image-slice: 1;
+}
+
+.contact-text-area{
+	position: absolute;
+	width: 340px;
+	height: 320px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* color: #fff; */
+	background: rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 968px) {
+	.hero.hero-bg-image-contact{
+		padding-top: 60px;
+		padding-bottom: 60px;
+		height: 560px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero.hero-bg-image-contact{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 480px;
+	}
+}
+
+
+/* FAQ */
+.faq-container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.faq-container details {
+    margin-bottom: 20px;
+}
+
+.faq-container summary {
+	font-weight: bold;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+	list-style: none;
+}
+
+.faq-container summary::before {
+	content: '+';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #46b8b8;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 24px;
+	margin-right: 8px;
+}
+
+details[open] summary::before {
+    content: '-';
+}
+
+.faq-container p {
+    padding: 12px 20px 0 58px;
+	line-height: 24px;
+}
+
+
+/* footer */
+
+.footer{
+	height: 760px;
+	color: #fff;
+	background-image: url('../images/bg/surfwell-bg-footer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.footer-mask{
+	/* border blurring */
+	background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.9), transparent 20%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 480px;
+}
+.footer .brand{
+	display: block;
+	width: 50%;
+	height: 120px;
+	background-image: url('../images/common/logo-surfwell-removebg.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* border: 1px solid yellow; */
+}
+.footer .nav{
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer .nav .nav-link{
+	display: block;
+	color: #fff;
+	line-height: 24px;
+	padding: 20px 16px;
+	transition: color 0.3s;
+}
+.footer .nav .nav-link:hover{
+	color: #46B9B9;
+}
+.footer .copyright{
+	font-size: 14px;
+	padding-top: 12px;
+}
+
+/* -------------------------- *\
+	Utility
+\* -------------------------- */
