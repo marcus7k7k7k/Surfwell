@@ -2,8 +2,8 @@
 
 ![Surfwell Cover](images/readme/surfwell-cover.png)
 ## 🏝️ Overview
-**Surfwell** is a surf-themed webpage that captures the spirit of the ocean, showcasing surfing services, coaches, and tropical vibes.  
-Built purely with **HTML5** and **CSS3** to demonstrate clean design and responsive layout skills.
+**Surfwell** is a surf-themed webpage that captures the spirit of the ocean, showcasing surfing services, coaches, and tropical vibes. 
+Built purely with **HTML5** and **CSS3** to demonstrate clean design and responsive layout skills. 
 Every wave-inspired design choice—vibrant colors, bold typography, and curated imagery—reflects a passion for surfing and pixel-perfect craftsmanship. 
 Perfect for surf enthusiasts and recruiters looking for front-end talent!🌊
 
@@ -30,21 +30,27 @@ Perfect for surf enthusiasts and recruiters looking for front-end talent!🌊
 ---
 ## ✨ Key features
 Introduces a luxury surf retreat in Cabarete, highlighting tropical vibes, pro coaching, and year-round waves.
+
 ![Surfwell Story](images/readme/surfwell-our-story.png)
 
 Showcases professional surfing coaches and their unique styles, sparking your passion for the waves
+
 ![Surfwell Coaches](images/readme/surfwell-coaches.png)
 
 Presents surfing lessons, equipment rentals, and global travel packages for wave riders of all levels.
+
 ![Surfwell Services](images/readme/surfwell-services.png)
 
 Invites beginners to connect for fun, safe surf lessons with a bold call-to-action button.
+
 ![Surfwell Contact](images/readme/surfwell-contact-us.png)
 
 Answers common questions about surfing, from safety to skills, with an easy-to-read Q&A.
+
 ![Surfwell FAQ](images/readme/surfwell-faq.png)
 
 Wraps up the site with quick navigation links and a chill vibe design.
+
 ![Surfwell Footer](images/readme/surfwell-footer.png)
 
 ## 📌 Future Plans
