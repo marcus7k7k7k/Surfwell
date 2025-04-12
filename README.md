@@ -1,11 +1,12 @@
-# 🏄 Surfwell - Surf-Themed Portfolio Website
+# 🏄 Surfwell - A Surf-Themed RWD Webpage
 
 ![Surfwell Cover](images/readme/surfwell-cover.png)
-## Overview
-**Surfwell** is a surf-themed portfolio website showcasing services, coaches, and tropical vibes.  
-A website concept for surf lovers, built purely with **HTML + CSS** to demonstrate clean design and layout skills.
-to be continued
-<!-- 待更新 -->
+## 🏝️ Overview
+**Surfwell** is a surf-themed webpage that captures the spirit of the ocean, showcasing surfing services, coaches, and tropical vibes.  
+Built purely with **HTML5** and **CSS3** to demonstrate clean design and responsive layout skills.
+Every wave-inspired design choice—vibrant colors, bold typography, and curated imagery—reflects a passion for surfing and pixel-perfect craftsmanship. 
+Perfect for surf enthusiasts and recruiters looking for front-end talent!🌊
+
 
 ## 🧩 Built with
 ![HTML](https://img.shields.io/badge/HTML-5-orange) 
@@ -25,35 +26,33 @@ to be continued
 
 3. Open http://127.0.0.1:8080 in your browser.
 
+
 ---
 ## ✨ Key features
-Feature 1 
-<!-- 待更新 -->
+Introduces a luxury surf retreat in Cabarete, highlighting tropical vibes, pro coaching, and year-round waves.
 ![Surfwell Story](images/readme/surfwell-our-story.png)
 
-Feature 2 
-<!-- 待更新 -->
+Showcases professional surfing coaches and their unique styles, sparking your passion for the waves
 ![Surfwell Coaches](images/readme/surfwell-coaches.png)
 
-Feature 3 
-<!-- 待更新 -->
+Presents surfing lessons, equipment rentals, and global travel packages for wave riders of all levels.
 ![Surfwell Services](images/readme/surfwell-services.png)
 
-Feature 4 
-<!-- 待更新 -->
+Invites beginners to connect for fun, safe surf lessons with a bold call-to-action button.
 ![Surfwell Contact](images/readme/surfwell-contact-us.png)
 
-Feature 5 
-<!-- 待更新 -->
+Answers common questions about surfing, from safety to skills, with an easy-to-read Q&A.
 ![Surfwell FAQ](images/readme/surfwell-faq.png)
 
-Feature 6 
-<!-- 待更新 -->
+Wraps up the site with quick navigation links and a chill vibe design.
 ![Surfwell Footer](images/readme/surfwell-footer.png)
 
 ## 📌 Future Plans
-to be continued
-<!-- 待更新 -->
+- Enable JavaScript-powered interactivity for the contact form and FAQ accordion.
+- Explore form submission options via Google Forms or backend integration.
+- Optimize performance and responsiveness, especially for mobile devices.
+- Implement multilingual support (e.g. English/Mandarin switcher).
+- ...and more!
 
 ---
 ## 👤 Author
@@ -62,4 +61,3 @@ to be continued
 
 ## 🔒 License
 Copyright Notice and Statement: currently not offering any license. Permission only to view and download.
-<!-- 待更新 -->
