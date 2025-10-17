@@ -8,7 +8,7 @@ Every wave-inspired design choice—vibrant colors, bold typography, and curated
 Perfect for surf enthusiasts and recruiters looking for front-end talent!🌊
 
 ## 🌐 Live Demo
-[👉 Visit CryptoWave on GitHub Pages](https://marcus7k7k7k.github.io/Surfwell)
+[👉 Visit Surfwell on GitHub Pages](https://marcus7k7k7k.github.io/Surfwell)
 
 ## 🧩 Built with
 ![HTML](https://img.shields.io/badge/HTML-5-orange) 
