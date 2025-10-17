@@ -7,6 +7,8 @@ Built purely with **HTML5** and **CSS3** to demonstrate clean design and respons
 Every wave-inspired design choice—vibrant colors, bold typography, and curated imagery—reflects a passion for surfing and pixel-perfect craftsmanship. 
 Perfect for surf enthusiasts and recruiters looking for front-end talent!🌊
 
+## 🌐 Live Demo
+[👉 Visit CryptoWave on GitHub Pages](https://marcus7k7k7k.github.io/Surfwell)
 
 ## 🧩 Built with
 ![HTML](https://img.shields.io/badge/HTML-5-orange) 
